@@ -19,7 +19,7 @@ module.exports = {
             filename: 'index.html',//指定文件名,也可以没有
             template: 'inline.html',
             // inject:'head',
-            inject: 'body',
+            inject: false,
             title: 'xixi baby',
             date: new Date(), //自定义元素
             excludeChunks: ['b', 'c']//排除
@@ -28,7 +28,7 @@ module.exports = {
             // filename: 'index-[hash].html',//指定文件名
             filename: 'index-2.html',//指定文件名,也可以没有
             template: 'inline.html',
-            inject: 'body',
+            inject: false,
             title: 'c page',
             date: new Date(), //自定义元素
             excludeChunks: ['d', 'b']
@@ -41,7 +41,7 @@ module.exports = {
             // filename: 'index-[hash].html',//指定文件名
             filename: 'index-3.html',//指定文件名,也可以没有
             template: 'inline.html',
-            inject: 'body',
+            inject: false,
             title: 'd page',
             date: new Date(), //自定义元素
             excludeChunks: ['c']
