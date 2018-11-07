@@ -22,10 +22,7 @@ module.exports = {
             inject: 'body',
             title: 'xixi baby',
             date: new Date(), //自定义元素
-            minify: { //对html压缩
-                removeComments: true,//删除注释
-                collapseWhitespace: true//删除空格
-            }
+            excludeChunks: ['b', 'c']//排除
         }),
         new htmlWebpackPlugin({
             // filename: 'index-[hash].html',//指定文件名
@@ -34,7 +31,7 @@ module.exports = {
             inject: 'body',
             title: 'c page',
             date: new Date(), //自定义元素
-            chunks: ['main', 'c']
+            excludeChunks: ['d', 'b']
             // minify: { //对html压缩
             //     removeComments: true,//删除注释
             //     collapseWhitespace: true//删除空格
@@ -47,7 +44,7 @@ module.exports = {
             inject: 'body',
             title: 'd page',
             date: new Date(), //自定义元素
-            chunks: ['main', 'b', 'd']
+            excludeChunks: ['c']
             // minify: { //对html压缩
             //     removeComments: true,//删除注释
             //     collapseWhitespace: true//删除空格
