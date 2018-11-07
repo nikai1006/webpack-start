@@ -1,4 +1,5 @@
 var path = require("path")
+var htmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: {
         main: './src/script/main.js',
@@ -8,5 +9,8 @@ module.exports = {
         path: path.resolve(__dirname, './dist/js'),
         filename: '[name]-[chunkhash].js'
     },
-    mode: 'production'
+    mode: 'production',
+    plugins: [
+        new htmlWebpackPlugin({template: 'index.html'})
+    ]
 }
