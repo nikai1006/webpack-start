@@ -1,5 +1,11 @@
 # webpack demo
 
+#### 创建工程
+- npm init 一直回车
+- npm install webpack --save-dev
+- mkdir src
+- mkdir dist
+
 #### plugins
 - ```npm install html-webpack-plugin --save-dev```
 
