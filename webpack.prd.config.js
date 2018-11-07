@@ -12,7 +12,8 @@ module.exports = {
     mode: 'production',
     plugins: [
         new htmlWebpackPlugin({
-            filename: 'index-[hash].html',//指定文件名
+            // filename: 'index-[hash].html',//指定文件名
+            filename: 'index.html',//指定文件名,也可以没有
             template: 'index.html',
             inject:'head',
             title: 'xixi baby',
