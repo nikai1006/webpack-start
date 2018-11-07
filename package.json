@@ -9,7 +9,8 @@
     "prd": "webpack --config webpack.prd.config.js --progress --display-modules --colors --display-reason --mode production",
     "none": "webpack --config webpack.config.js --progress --display-modules --colors --display-reason --mode none",
     "multi": "webpack --config webpack.multi.config.js --progress --display-modules --colors --display-reason --mode none",
-    "multi-2": "webpack --config webpack.multi2.config.js --progress --display-modules --colors --display-reason --mode none"
+    "multi-2": "webpack --config webpack.multi2.config.js --progress --display-modules --colors --display-reason --mode none",
+    "inline": "webpack --config webpack.inline.config.js --progress --display-modules --colors --display-reason --mode none"
   },
   "repository": {
     "type": "git",

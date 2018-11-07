@@ -14,3 +14,5 @@
 - [https://blog.csdn.net/a4_9527/article/details/81045791](https://blog.csdn.net/a4_9527/article/details/81045791)
 - [webpack官网文档](https://webpack.js.org/concepts/entry-points/)
 - [https://github.com/kangax/html-minifier](https://github.com/kangax/html-minifier)
+- [https://github.com/jantimon/html-webpack-plugin/](https://github.com/jantimon/html-webpack-plugin/)
+- [inline-script](https://github.com/jantimon/html-webpack-plugin/blob/master/examples/inline/template.pug)
