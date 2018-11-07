@@ -7,7 +7,8 @@ module.exports = {
     }, //打包的入口文件
     output: {//打包输出
         path: path.resolve(__dirname, './dist'),
-        filename: 'js/[name]-[chunkhash].js'
+        filename: 'js/[name]-[chunkhash].js',
+        publicPath: 'http://nikai.net.cn/'
     },
     mode: 'production',
     plugins: [
@@ -15,9 +16,14 @@ module.exports = {
             // filename: 'index-[hash].html',//指定文件名
             filename: 'index.html',//指定文件名,也可以没有
             template: 'index.html',
-            inject:'head',
+            // inject:'head',
+            inject: false,
             title: 'xixi baby',
-            date: new Date() //自定义元素
+            date: new Date(), //自定义元素
+            minify: { //对html压缩
+                removeComments: true,//删除注释
+                collapseWhitespace: true//删除空格
+            }
         })
     ]
 }

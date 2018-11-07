@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </head>
 <body>
+<script type="text/javascript" src="<%= htmlWebpackPlugin.files.chunks.b.entry %>"></script>
 <%= htmlWebpackPlugin.options.date %>
 <% for (var key in htmlWebpackPlugin) {%>
 <%= key %>

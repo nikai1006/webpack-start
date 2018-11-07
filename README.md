@@ -13,3 +13,4 @@
 - [https://www.imooc.com/qadetail/210600](https://www.imooc.com/qadetail/210600)
 - [https://blog.csdn.net/a4_9527/article/details/81045791](https://blog.csdn.net/a4_9527/article/details/81045791)
 - [webpack官网文档](https://webpack.js.org/concepts/entry-points/)
+- [https://github.com/kangax/html-minifier](https://github.com/kangax/html-minifier)
