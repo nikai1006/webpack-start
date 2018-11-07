@@ -6,11 +6,15 @@ module.exports = {
         b: './src/script/b.js'
     }, //打包的入口文件
     output: {//打包输出
-        path: path.resolve(__dirname, './dist/js'),
-        filename: '[name]-[chunkhash].js'
+        path: path.resolve(__dirname, './dist'),
+        filename: 'js/[name]-[chunkhash].js'
     },
     mode: 'production',
     plugins: [
-        new htmlWebpackPlugin({template: 'index.html'})
+        new htmlWebpackPlugin({
+            filename: 'index-[hash].html',//指定文件名
+            template: 'index.html',
+            inject:'head'
+        })
     ]
 }
