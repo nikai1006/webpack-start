@@ -14,7 +14,9 @@ module.exports = {
         new htmlWebpackPlugin({
             filename: 'index-[hash].html',//指定文件名
             template: 'index.html',
-            inject:'head'
+            inject:'head',
+            title: 'xixi baby',
+            date: new Date() //自定义元素
         })
     ]
 }
